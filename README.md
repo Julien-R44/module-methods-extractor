@@ -1,9 +1,9 @@
-# @julr/module-methods-extractor
-
-🪛 Utility module to extract public methods for a given default Typescript export. Used by the Adonis.js VSCode extension
-
-> The module is tailored for Adonis.js only, which helps in optimizing the way we scan the source code AST.
-
+<div align="center">
+  <img width="650" src="https://user-images.githubusercontent.com/8337858/187311621-767302f4-fe05-471c-adfa-ce1b589460d1.png" />
+  <h2>@julr/module-methods-extractor</h2>
+  <h4>🪛 Utility module to extract public methods for a given default Typescript export. Used by the Adonis.js VSCode extension</h4>
+  <br/>
+</div>
 
 ## Installation
 ```bash
@@ -19,7 +19,6 @@ const extractor = new Extractor()
 const response = extractor.extract(`
   export default class UserController {
     public async index () {}
-
     public async store () {}
   }
 `)
@@ -28,7 +27,7 @@ assert.deepEqual(response, {
   kind: 'class',
   methods: [
     { name: 'index', lineno: 2 },
-    { name: 'store', lineno: 5 },    
+    { name: 'store', lineno: 5 },
   ]
 })
 ```
