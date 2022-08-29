@@ -1,7 +1,7 @@
 {
   "name": "@julr/module-methods-extractor",
   "type": "module",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "packageManager": "pnpm@7.9.3",
   "description": "🪛 Utility module to extract public methods for a given default Typescript export. Used by the Adonis.js VSCode extension",
   "author": "Julien Ripouteau <julien@ripouteau.com>",
