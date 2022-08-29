@@ -12,6 +12,7 @@
     "strict": true,
     "strictNullChecks": true,
     "resolveJsonModule": true,
+    "removeComments": false,
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "noUnusedLocals": true,

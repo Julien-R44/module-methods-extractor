@@ -1,21 +1,27 @@
 {
-  "name": "starter-ts",
+  "name": "@julr/module-methods-extractor",
   "type": "module",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "packageManager": "pnpm@7.9.3",
-  "description": "",
+  "description": "🪛 Utility module to extract public methods for a given default Typescript export. Used by the Adonis.js VSCode extension",
   "author": "Julien Ripouteau <julien@ripouteau.com>",
   "license": "MIT",
   "funding": "https://github.com/sponsors/Julien-R44",
-  "homepage": "https://github.com/Julien-R44/[name]#readme",
+  "homepage": "https://github.com/Julien-R44/module-methods-extracto#readme",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Julien-R44/[name].git"
+    "url": "git+https://github.com/Julien-R44/module-methods-extracto.git"
   },
   "bugs": {
-    "url": "https://github.com/Julien-R44/[name]/issues"
+    "url": "https://github.com/Julien-R44/module-methods-extracto/issues"
   },
-  "keywords": [],
+  "keywords": [
+    "ast",
+    "parser",
+    "methods",
+    "typescript",
+    "class"
+  ],
   "exports": {
     ".": {
       "types": "./dist/index.d.ts",
@@ -51,8 +57,12 @@
     "test": "node --loader=ts-node/esm bin/test.ts",
     "typecheck": "tsc --noEmit"
   },
+  "dependencies": {
+    "@babel/parser": "^7.18.13"
+  },
   "devDependencies": {
     "@antfu/ni": "^0.17.2",
+    "@babel/types": "^7.18.13",
     "@japa/assert": "^1.3.4",
     "@japa/runner": "^2.0.9",
     "@japa/spec-reporter": "^1.1.12",
