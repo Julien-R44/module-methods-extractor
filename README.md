@@ -1,9 +1,11 @@
 <div align="center">
   <img width="650" src="https://user-images.githubusercontent.com/8337858/187311621-767302f4-fe05-471c-adfa-ce1b589460d1.png" />
-  <h2>@julr/module-methods-extractor</h2>
-  <h4>🪛 Utility module to extract public methods for a given default Typescript export. Used by the Adonis.js VSCode extension</h4>
   <br/>
 </div>
+
+# @julr/module-methods-extractor
+
+🪛 Utility module to extract public methods for a given default Typescript export. Used by the Adonis.js VSCode extension
 
 ## Installation
 ```bash
